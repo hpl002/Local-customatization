@@ -1,0 +1,328 @@
+{
+  "title": "commands for non-apple keyboards",
+  "rules": [
+    {
+      "description": "command+r by f5 in non-Apple keyboards",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f5",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "r",
+          "modifiers": ["command"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "control + command + f by f11 in non-Apple keyboards",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f11",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+          "modifiers": ["control",
+          "command"
+          ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "command + option + i by f12 in non-Apple keyboards",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f12",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+          "modifiers": ["option",
+          "command"
+          ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Chrome by f1 in non-Apple keyboards",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f1",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {"shell_command": "open -a 'Google Chrome'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "VBCODE by f2 in non-Apple keyboards",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f2",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {"shell_command": "open -a 'Visual Studio Code'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "spotify by f3 in non-Apple keyboards",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f3",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {"shell_command": "open -a 'Spotify'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "pause to sleep in non-Apple keyboards",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "pause",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "pmset sleepnow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "remap { to appropriate key in cooler master masterkeys pro s pan nordic(here implemented as non apple keyboard)",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "7",
+            "modifiers": {
+              "mandatory": [
+                "option"
+            ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "8",
+          "modifiers": ["option","shift"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "remap } to appropriate key in cooler master masterkeys pro s pan nordic(here implemented as non apple keyboard)",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "0",
+            "modifiers": {
+              "mandatory": [
+                "option"
+            ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
+          "modifiers": ["option","shift"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "remap single quote to astrix in cooler master masterkeys pro s pan nordic(here implemented as non apple keyboard)",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_unless",
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "non_us_pound",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "grave_accent_and_tilde",
+          "modifiers": [""]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
